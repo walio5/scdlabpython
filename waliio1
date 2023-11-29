@@ -1,0 +1,36 @@
+class Person:
+    def __init__(self, name, age, address):
+        self._name = name
+        self._age = age
+        self._address = address
+
+    def get_name(self):
+        return self._name
+
+    def get_age(self):
+        return self._age
+
+    def get_address(self):
+        return self._address
+
+    def set_name(self, new_name):
+        self._name = new_name
+
+    def set_age(self, new_age):
+        self._age = new_age
+
+    def set_address(self, new_address):
+        self._address = new_address
+
+person1 = Person("Wali", 23, "Shahdra lahore")
+print("Name:", person1.get_name())
+print("Age:", person1.get_age())
+print("Address:", person1.get_address())
+
+person1.set_name("Mazhar Ali")
+person1.set_age(21)
+person1.set_address("Samnabad lahore")
+
+print("Updated Name:", person1.get_name())
+print("Updated Age:", person1.get_age())
+print("Updated Address:", person1.get_address())
